@@ -3,7 +3,7 @@ int main()
 {
 	int num,digit=0,sum=0,power,i,rem;
 	printf("\nEnter the number = ");
-	scanf("%d",&num);//153
+	scanf("%d",&num);//24/10=2/10=0
 	int temp = num;
 	int copy = num;
 	while(num!=0)
