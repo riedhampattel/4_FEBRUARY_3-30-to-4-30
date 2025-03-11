@@ -86,12 +86,12 @@ int main()
 			}
 		break;
 		case 4:
-			for(i=0;i<size;i++)//2/1
+			for(i=0;i<size;i++)
 			{
-				for(j=0;j<size;j++)//2/1
+				for(j=0;j<size;j++)
 				{
 					ans[i][j] = 0;
-					for(k=0;k<size;k++)//2/1
+					for(k=0;k<size;k++)
 					{
 						ans[i][j] = ans[i][j] + (a[i][k]*b[k][j]);
 					}
