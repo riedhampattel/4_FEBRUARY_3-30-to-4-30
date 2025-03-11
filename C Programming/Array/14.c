@@ -2,7 +2,7 @@
 int main()
 {
 	int a[10][10],b[10][10],ans[10][10];
-	int size,i,j,choice;
+	int size,i,j,k,choice;
 	printf("\nEnter the size of an array = ");
 	scanf("%d",&size);
 	printf("\nEnter the element in array a");
@@ -86,6 +86,26 @@ int main()
 			}
 		break;
 		case 4:
+			for(i=0;i<size;i++)//2/1
+			{
+				for(j=0;j<size;j++)//2/1
+				{
+					ans[i][j] = 0;
+					for(k=0;k<size;k++)//2/1
+					{
+						ans[i][j] = ans[i][j] + (a[i][k]*b[k][j]);
+					}
+				}
+			}
+			printf("\nMultiplication array\n");
+			for(i=0;i<size;i++)
+			{
+				for(j=0;j<size;j++)
+				{
+					printf("%d ",ans[i][j]);
+				}
+				printf("\n");
+			}
 		break;
 	}
 	return 0;
