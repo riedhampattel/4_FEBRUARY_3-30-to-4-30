@@ -44,6 +44,30 @@ int main()
 			{
 				for(j=0;j<size;j++)
 				{
+					printf("%d ",a[i][j]);
+				}
+				if(i==size/2)
+				{
+					printf(" +  ");
+				}
+				else
+				{
+					printf("    ");
+				}
+				for(j=0;j<size;j++)
+				{
+					printf("%d ",b[i][j]);
+				}
+				if(i==size/2)
+				{
+					printf(" =  ");
+				}
+				else
+				{
+					printf("    ");
+				}
+				for(j=0;j<size;j++)
+				{
 					printf("%d ",ans[i][j]);
 				}
 				printf("\n");
@@ -62,6 +86,30 @@ int main()
 			{
 				for(j=0;j<size;j++)
 				{
+					printf("%d ",a[i][j]);
+				}
+				if(i==size/2)
+				{
+					printf(" -  ");
+				}
+				else
+				{
+					printf("    ");
+				}
+				for(j=0;j<size;j++)
+				{
+					printf("%d ",b[i][j]);
+				}
+				if(i==size/2)
+				{
+					printf(" =  ");
+				}
+				else
+				{
+					printf("    ");
+				}
+				for(j=0;j<size;j++)
+				{
 					printf("%d ",ans[i][j]);
 				}
 				printf("\n");
@@ -78,6 +126,30 @@ int main()
 			printf("\nDivision array\n");
 			for(i=0;i<size;i++)
 			{
+				for(j=0;j<size;j++)
+				{
+					printf("%d ",a[i][j]);
+				}
+				if(i==size/2)
+				{
+					printf(" /  ");
+				}
+				else
+				{
+					printf("    ");
+				}
+				for(j=0;j<size;j++)
+				{
+					printf("%d ",b[i][j]);
+				}
+				if(i==size/2)
+				{
+					printf(" =  ");
+				}
+				else
+				{
+					printf("    ");
+				}
 				for(j=0;j<size;j++)
 				{
 					printf("%d ",ans[i][j]);
