@@ -176,25 +176,25 @@ int main()
 				{
 					printf("%d ",a[i][j]);
 				}
-				if(i==size/2)
+				if(size/2==i)
 				{
-					printf(" *  ");
+					printf(" + ");
 				}
 				else
 				{
-					printf("    ");
+					printf("   ");
 				}
 				for(j=0;j<size;j++)
 				{
 					printf("%d ",b[i][j]);
 				}
-				if(i==size/2)
+				if(size/2==i)
 				{
-					printf(" =  ");
+					printf(" = ");	
 				}
 				else
 				{
-					printf("    ");
+					printf("   ");
 				}
 				for(j=0;j<size;j++)
 				{
