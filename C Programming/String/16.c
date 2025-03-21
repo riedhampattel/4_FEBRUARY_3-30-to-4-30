@@ -6,6 +6,7 @@ void copy(char ch1[],char ch2[])
 	{
 		ch1[i] = ch2[i];
 	}
+	ch1[i]='\0';
 	printf("\nCopied str1 = %s",ch1);
 	printf("\nCopied str2 = %s",ch2);
 }
