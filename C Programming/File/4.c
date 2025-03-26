@@ -6,6 +6,9 @@ struct Student
 	char grade;
 }s[100];
 int num;
+void add();
+void displayall();
+void display();
 int main()
 {
 	int choice;
@@ -83,6 +86,9 @@ void display()
 	printf("\nEnter the roll = ");
 	scanf("%s",&temp);//101
 	fp1 = fopen("student.txt","r");
+	printf("----------------------------");
+	printf("\nRoll  name  grade\n");
+	printf("----------------------------\n");
 	while(fgets(str,sizeof(str),fp1))
 	{
 		flag=0;
