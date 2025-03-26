@@ -9,6 +9,7 @@ int num;
 int main()
 {
 	int choice;
+	up :
 	printf("\n1.Add students");
 	printf("\n2.Display students");
 	printf("\n3.Display particular student");
@@ -23,9 +24,21 @@ int main()
 			displayall();
 		break;
 		case 3:
+			display();
 		break;
 	}
-	
+	char ch;
+	printf("\nPress 'Y' to continue and 'N' to exit = ");
+	scanf(" %c",&ch);
+	if(ch=='Y' || ch=='y')
+	{
+		goto up;
+	}
+	else
+	{
+		goto down;
+	}
+	down:
 	return 0;
 }
 void add()
@@ -59,5 +72,34 @@ void displayall()
 	while(fgets(str,sizeof(str),fp1))
 	{
 		printf("%s",str);
+	}
+}
+void display()
+{
+	char temp[3];
+	char str[100];
+	int flag=0,i;
+	FILE *fp1;
+	printf("\nEnter the roll = ");
+	scanf("%s",&temp);//101
+	fp1 = fopen("student.txt","r");
+	while(fgets(str,sizeof(str),fp1))
+	{
+		flag=0;
+		for(i=0;i<=2;i++)
+		{
+			if(str[i]==temp[i])
+			{
+				flag++;
+			}
+		}
+		if(flag==3)
+		{
+			printf("\n%s",str);
+		}
+	}
+	if(flag!=3)
+	{
+		printf("\nData doesn't exist");
 	}
 }
