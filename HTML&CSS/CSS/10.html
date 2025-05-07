@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+</head>
+<style>
+    *
+    {
+        color: red;
+        background-color: yellow;
+    }
+    blockquote
+    {
+        background-color: red;
+        color: yellow;
+    }
+    p,b
+    {
+        background-color: white;
+        color: brown;
+    }
+    p
+    {
+        background-color: black;
+        color: white;
+    }
+    .para
+    {
+        color: aquamarine;
+        background-color: brown;
+    }
+    #para1
+    {
+        color: blueviolet;
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <p id="para1" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo blanditiis amet dolor libero fuga inventore facere itaque accusantium a consequuntur earum quidem modi consequatur voluptatem incidunt reiciendis, adipisci doloribus eius, rerum dignissimos. Cumque, iste ad! Facilis blanditiis voluptates temporibus minus beatae debitis dolorum maxime minima, delectus qui accusamus similique optio, error velit unde, aspernatur deserunt officiis. Placeat, laborum officiis debitis odit expedita vitae quod perspiciatis eligendi! Magnam rem sint ea, placeat exercitationem alias pariatur quisquam qui, eveniet ab maxime dolores doloribus dolor quidem ullam iure esse obcaecati possimus totam adipisci dolore earum excepturi! Inventore doloremque temporibus nostrum, dolores accusantium a nihil itaque deserunt eum pariatur soluta animi suscipit natus quo sed. Consectetur veniam sit modi perspiciatis laborum repellat minus molestias voluptates animi deleniti optio cumque, natus veritatis at inventore dolorum. Architecto ad aspernatur ab illo maxime fugit repellat perferendis, corrupti dignissimos quasi totam voluptas expedita rerum! Quas, sunt similique?</p><hr>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo blanditiis amet dolor libero fuga inventore facere itaque accusantium a consequuntur earum quidem modi consequatur voluptatem incidunt reiciendis, adipisci doloribus eius, rerum dignissimos. Cumque, iste ad! Facilis blanditiis voluptates temporibus minus beatae debitis dolorum maxime minima, delectus qui accusamus similique optio, error velit unde, aspernatur deserunt officiis. Placeat, laborum officiis debitis odit expedita vitae quod perspiciatis eligendi! Magnam rem sint ea, placeat exercitationem alias pariatur quisquam qui, eveniet ab maxime dolores doloribus dolor quidem ullam iure esse obcaecati possimus totam adipisci dolore earum excepturi! Inventore doloremque temporibus nostrum, dolores accusantium a nihil itaque deserunt eum pariatur soluta animi suscipit natus quo sed. Consectetur veniam sit modi perspiciatis laborum repellat minus molestias voluptates animi deleniti optio cumque, natus veritatis at inventore dolorum. Architecto ad aspernatur ab illo maxime fugit repellat perferendis, corrupti dignissimos quasi totam voluptas expedita rerum! Quas, sunt similique?</p><hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo blanditiis amet dolor libero fuga inventore facere itaque accusantium a consequuntur earum quidem modi consequatur voluptatem incidunt reiciendis, adipisci doloribus eius, rerum dignissimos. Cumque, iste ad! Facilis blanditiis voluptates temporibus minus beatae debitis dolorum maxime minima, delectus qui accusamus similique optio, error velit unde, aspernatur deserunt officiis. Placeat, laborum officiis debitis odit expedita vitae quod perspiciatis eligendi! Magnam rem sint ea, placeat exercitationem alias pariatur quisquam qui, eveniet ab maxime dolores doloribus dolor quidem ullam iure esse obcaecati possimus totam adipisci dolore earum excepturi! Inventore doloremque temporibus nostrum, dolores accusantium a nihil itaque deserunt eum pariatur soluta animi suscipit natus quo sed. Consectetur veniam sit modi perspiciatis laborum repellat minus molestias voluptates animi deleniti optio cumque, natus veritatis at inventore dolorum. Architecto ad aspernatur ab illo maxime fugit repellat perferendis, corrupti dignissimos quasi totam voluptas expedita rerum! Quas, sunt similique?</p><hr>
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo blanditiis amet dolor libero fuga inventore facere itaque accusantium a consequuntur earum quidem modi consequatur voluptatem incidunt reiciendis, adipisci doloribus eius, rerum dignissimos. Cumque, iste ad! Facilis blanditiis voluptates temporibus minus beatae debitis dolorum maxime minima, delectus qui accusamus similique optio, error velit unde, aspernatur deserunt officiis. Placeat, laborum officiis debitis odit expedita vitae quod perspiciatis eligendi! Magnam rem sint ea, placeat exercitationem alias pariatur quisquam qui, eveniet ab maxime dolores doloribus dolor quidem ullam iure esse obcaecati possimus totam adipisci dolore earum excepturi! Inventore doloremque temporibus nostrum, dolores accusantium a nihil itaque deserunt eum pariatur soluta animi suscipit natus quo sed. Consectetur veniam sit modi perspiciatis laborum repellat minus molestias voluptates animi deleniti optio cumque, natus veritatis at inventore dolorum. Architecto ad aspernatur ab illo maxime fugit repellat perferendis, corrupti dignissimos quasi totam voluptas expedita rerum! Quas, sunt similique?</blockquote><hr>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo blanditiis amet dolor libero fuga inventore facere itaque accusantium a consequuntur earum quidem modi consequatur voluptatem incidunt reiciendis, adipisci doloribus eius, rerum dignissimos. Cumque, iste ad! Facilis blanditiis voluptates temporibus minus beatae debitis dolorum maxime minima, delectus qui accusamus similique optio, error velit unde, aspernatur deserunt officiis. Placeat, laborum officiis debitis odit expedita vitae quod perspiciatis eligendi! Magnam rem sint ea, placeat exercitationem alias pariatur quisquam qui, eveniet ab maxime dolores doloribus dolor quidem ullam iure esse obcaecati possimus totam adipisci dolore earum excepturi! Inventore doloremque temporibus nostrum, dolores accusantium a nihil itaque deserunt eum pariatur soluta animi suscipit natus quo sed. Consectetur veniam sit modi perspiciatis laborum repellat minus molestias voluptates animi deleniti optio cumque, natus veritatis at inventore dolorum. Architecto ad aspernatur ab illo maxime fugit repellat perferendis, corrupti dignissimos quasi totam voluptas expedita rerum! Quas, sunt similique?</b>
+</body>
+</html>
