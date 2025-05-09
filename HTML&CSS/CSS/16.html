@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    div
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 25px;
+        
+    }
+    p
+    {
+        border: 3px solid brown;
+        border-radius: 20px;
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: plum;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .para
+    {
+        background-color: palevioletred;
+    }
+    #para9
+    {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #para5
+    {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    #para8
+    {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    img
+    {
+        display: block;
+        margin-left: 150px;
+        margin-top: 30px;
+        border-radius: 50%;
+        width: 150px;
+    }
+</style>
+<body>
+    <div>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero.</p>
+    <p class="para" id="para5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero. <img src="./logo.jpg" alt=""> </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero.</p>
+    <p id="para8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero. <img src="./logo.jpg" alt=""> </p>
+    <p class="para" id="para9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est. Ab odio omnis ea animi, laboriosam illum nihil harum quibusdam voluptates mollitia doloribus autem hic labore, eius possimus perspiciatis inventore, velit accusantium quisquam officia ipsum! Incidunt ab vitae, culpa eum laudantium aliquam ratione dolor omnis, nulla praesentium explicabo. Quaerat quidem dolorum magnam odio, eius ab perferendis! Labore officia magnam cumque. Non pariatur, corporis molestias minus quod placeat consequuntur natus omnis earum nemo libero.</p>
+    </div>
+</body>
+</html>
