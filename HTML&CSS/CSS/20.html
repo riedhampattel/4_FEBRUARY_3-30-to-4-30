@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        background-color: black;
+        color: brown;
+        font-size: 50px;
+    }
+    div
+    {
+        text-align: center;
+        margin-top: 18rem;
+    }
+    h1::before
+    {
+       content: ""; 
+    }
+    h1::after
+    {
+        content: "";
+        animation: text 10s infinite;
+    }
+    @keyframes text
+    {
+        0%,25%
+        {
+            content: "Software engineer";
+        }
+        26%,50%
+        {
+            content: "App developer";
+        }
+        51%,75%
+        {
+            content: "Web developer";
+        }
+        76%,100%
+        {
+            content: "Graphic designer";
+        }
+    }
+</style>
+<body>
+    <div>
+        <h1></h1>
+    </div>
+</body>
+</html>

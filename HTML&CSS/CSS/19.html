@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    div
+    {
+        background-color: red;
+        height: 450px;
+        width: 450px;
+        animation: change 10s;
+    }
+    @keyframes change
+    {
+        0%,25%
+        {
+            border-color: red;
+        }
+        26%,50%
+        {
+            background-color: yellow;
+        }
+        51%,75%
+        {
+            background-color: green;
+        }
+        76%,100%
+        {
+            background-color: blue;
+        }
+    }
+</style>
+<body>
+    <div>
+    </div>    
+</body>
+</html>

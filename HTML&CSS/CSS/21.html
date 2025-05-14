@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down</title>
+</head>
+<style>
+    a
+    {
+        text-decoration: none;
+        color: black;
+        padding: 1rem;
+        font-weight: 700;
+    }
+    .content
+    {
+        background-color: lightgrey;
+        width: 130px;
+        text-align: center;
+        display: none;
+    }
+    .drop-down:hover .content
+    {
+        display: block;
+    }
+</style>
+<body>
+    <div class="drop-down">
+        <button>Food</button>
+        <div class="content">
+            <a href="#">Pizza</a>
+            <a href="#">Noodles</a>
+            <a href="#">Manchurian</a>
+        </div>
+    </div>    
+</body>
+</html>
